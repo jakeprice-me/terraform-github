@@ -53,6 +53,7 @@ resource "github_repository" "bash-scripts" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["bash", "script"]
 }
 
 resource "github_repository" "dotfiles" {
@@ -63,6 +64,7 @@ resource "github_repository" "dotfiles" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["dotfiles", "bashrc", "vimrc", "tmux"]
 }
 
 resource "github_repository" "espanso-config" {
@@ -84,6 +86,7 @@ resource "github_repository" "hugo-theme-log" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["hugo", "theme"]
 }
 
 resource "github_repository" "jakeprice-dev" {
@@ -94,6 +97,8 @@ resource "github_repository" "jakeprice-dev" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["blog", "hugo"]
+
 }
 
 resource "github_repository" "jpd" {
@@ -104,6 +109,7 @@ resource "github_repository" "jpd" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["blog", "hugo", "theme"]
 }
 
 resource "github_repository" "log-utilities" {
@@ -114,6 +120,7 @@ resource "github_repository" "log-utilities" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["python", "script"]
 }
 
 resource "github_repository" "miniflux-block" {
@@ -135,6 +142,7 @@ resource "github_repository" "misc-config" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["config"]
 }
 
 resource "github_repository" "ppn" {
@@ -145,6 +153,7 @@ resource "github_repository" "ppn" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["self-hosted", "infrastructure-as-code", "configuration-as-code", "docker", "docker-compose", "dockerfile"]
 }
 
 resource "github_repository" "start-page" {
@@ -155,6 +164,7 @@ resource "github_repository" "start-page" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["home-page", "start-page", "new-tab-page"]
 }
 
 resource "github_repository" "terraform-github" {
@@ -176,6 +186,7 @@ resource "github_repository" "top-reddit-posts" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["reddit", "script", "python", "api"]
 }
 
 resource "github_repository" "weather-report" {
@@ -186,5 +197,6 @@ resource "github_repository" "weather-report" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
+  topics        = ["weather", "api", "openweathermap", "telegram"]
 }
 
