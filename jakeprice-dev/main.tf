@@ -86,6 +86,16 @@ resource "github_repository" "hugo-theme-log" {
   has_wiki      = false
 }
 
+resource "github_repository" "jakeprice-dev" {
+  name          = "jakeprice.dev"
+  description   = "Hugo Static Site for jakeprice.dev"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+}
+
 resource "github_repository" "jpd" {
   name          = "jpd"
   description   = "Custom Hugo theme for jakeprice.dev."
