@@ -56,6 +56,17 @@ resource "github_repository" "bash-scripts" {
   topics        = ["bash", "script"]
 }
 
+resource "github_repository" "docker-hugo" {
+  name          = "docker-hugo"
+  description   = "Hugo Static Site Generator Docker Image"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["docker", "hugo", "dockerfile"]
+}
+
 resource "github_repository" "dotfiles" {
   name          = "dotfiles"
   description   = "Personal dotfiles."
