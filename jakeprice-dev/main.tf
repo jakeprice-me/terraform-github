@@ -23,15 +23,15 @@ resource "github_repository" "ansible-fedora" {
   topics        = ["ansible", "playbook", "fedora"]
 }
 
-resource "github_repository" "ansible-ionos-ubuntu" {
-  name          = "ansible-ionos-ubuntu"
-  description   = "Ansible Playbook to Configure an Ionos VPS."
+resource "github_repository" "ansible-ionos-jakeprice-01" {
+  name          = "ansible-ionos-jakeprice-01"
+  description   = "Ansible Playbook to Configure IONOS VPS to Host jakeprice.dev"
   visibility    = "public"
   has_downloads = false
   has_issues    = true
   has_projects  = false
   has_wiki      = false
-  topics        = ["ansible", "playbook", "ionos", "ubuntu"]
+  topics        = ["ansible", "playbook", "ionos"]
 }
 
 resource "github_repository" "ansible-macbook-macos" {
