@@ -167,17 +167,6 @@ resource "github_repository" "ppn" {
   topics        = ["self-hosted", "infrastructure-as-code", "configuration-as-code", "docker", "docker-compose", "dockerfile"]
 }
 
-resource "github_repository" "start-page" {
-  name          = "start-page"
-  description   = "Personal Start/Home/New Tab Page."
-  visibility    = "public"
-  has_downloads = false
-  has_issues    = true
-  has_projects  = false
-  has_wiki      = false
-  topics        = ["home-page", "start-page", "new-tab-page"]
-}
-
 resource "github_repository" "terraform-github" {
   name          = "terraform-github"
   description   = "Terraform Configuration for My GitHub Repositories."
