@@ -167,6 +167,17 @@ resource "github_repository" "ppn" {
   topics        = ["self-hosted", "infrastructure-as-code", "configuration-as-code", "docker", "docker-compose", "dockerfile"]
 }
 
+resource "github_repository" "tech-notes" {
+  name          = "tech-notes"
+  description   = "Notes on Tech"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["til", "tech-notes"]
+}
+
 resource "github_repository" "terraform-github" {
   name          = "terraform-github"
   description   = "Terraform Configuration for My GitHub Repositories."
