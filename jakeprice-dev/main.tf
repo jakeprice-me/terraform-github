@@ -167,16 +167,16 @@ resource "github_repository" "ppn" {
   topics        = ["self-hosted", "infrastructure-as-code", "configuration-as-code", "docker", "docker-compose", "dockerfile"]
 }
 
-resource "github_repository" "tech-notes" {
-  name          = "tech-notes"
-  description   = "Notes on Tech"
-  visibility    = "public"
-  has_downloads = false
-  has_issues    = true
-  has_projects  = false
-  has_wiki      = false
-  topics        = ["til", "tech-notes"]
-}
+#resource "github_repository" "tech-notes" {
+#  name          = "tech-notes"
+#  description   = "Notes on Tech"
+#  visibility    = "public"
+#  has_downloads = false
+#  has_issues    = true
+#  has_projects  = false
+#  has_wiki      = false
+#  topics        = ["til", "tech-notes"]
+#}
 
 resource "github_repository" "terraform-github" {
   name          = "terraform-github"
@@ -209,5 +209,16 @@ resource "github_repository" "weather-report" {
   has_projects  = false
   has_wiki      = false
   topics        = ["weather", "api", "openweathermap", "telegram"]
+}
+
+resource "github_repository" "work-docker-utils" {
+  name          = "work-docker-utils"
+  description   = "Personal utilities to support my work, in a Docker Compose environment"
+  visibility    = "private"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["work", "docker"]
 }
 
