@@ -123,6 +123,17 @@ resource "github_repository" "jpd" {
   topics        = ["blog", "hugo", "theme"]
 }
 
+resource "github_repository" "log-cli" {
+  name          = "log-cli"
+  description   = "Command Line Interface for my Personal Log."
+  visibility    = "private"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["log", "cli"]
+}
+
 resource "github_repository" "log-utilities" {
   name          = "log-utilities"
   description   = "A collection of personal Python scripts for enabling features on my Personal Log."
