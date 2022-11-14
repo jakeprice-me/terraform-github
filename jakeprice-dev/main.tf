@@ -211,6 +211,17 @@ resource "github_repository" "top-reddit-posts" {
   topics        = ["reddit", "script", "python", "api"]
 }
 
+resource "github_repository" "docker-unison" {
+  name          = "docker-unison"
+  description   = "Personal Docker Image for Unison File Sync"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["docker", "unison"]
+}
+
 resource "github_repository" "weather-report" {
   name          = "weather-report"
   description   = "Daily Weather Report via Telegram."
