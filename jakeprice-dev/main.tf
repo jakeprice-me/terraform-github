@@ -34,9 +34,9 @@ resource "github_repository" "ansible-ionos-jakeprice-01" {
   topics        = ["ansible", "playbook", "ionos"]
 }
 
-resource "github_repository" "ansible-macbook-macos" {
-  name          = "ansible-macbook-macos"
-  description   = "Ansible Playbook for MacOS Work Devices."
+resource "github_repository" "ansible-macos" {
+  name          = "ansible-macos"
+  description   = "Ansible Playbook for macOS Work Devices."
   visibility    = "private"
   has_downloads = false
   has_issues    = true
