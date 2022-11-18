@@ -89,6 +89,17 @@ resource "github_repository" "espanso-config" {
   topics        = ["espanso"]
 }
 
+resource "github_repository" "github-cli" {
+  name          = "github-cli"
+  description   = "A Python CLI for Interacting with the GitHub API"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["github", "api"]
+}
+
 resource "github_repository" "hugo-theme-log" {
   name          = "hugo-theme-log"
   description   = "Hugo Theme for Personal Log."
