@@ -4,9 +4,11 @@ I use GitHub to create and maintain my repositories (because why the heck not?!)
 
 ## Terraform Variables
 
-The GitHub Terraform provider requires an access token to be able to perform operations against GitHub. This should be stored in a `terraform.tfvars` file, and _not_ committed to version control.
+The GitHub Terraform provider requires an access token to be able to perform operations against GitHub. This should be stored in a `terraform.tfvars` file, and _not_ committed to version control. 
 
-Create `terraform.tfvars` and add the below variable.
+It needs to have `repo` and `delete_repo` permissions.
+
+Create `terraform.tfvars` and add the below variable, with a token from [here](https://github.com/settings/tokens/new).
 
 ```ini
 token = "<github-access-token>
