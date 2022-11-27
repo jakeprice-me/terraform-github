@@ -56,6 +56,17 @@ resource "github_repository" "bash-scripts" {
   topics        = ["bash", "script"]
 }
 
+resource "github_repository" "docker-caddy-namecheap" {
+  name          = "docker-caddy-namecheap"
+  description   = "Caddy Namecheap Docker Image"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["docker", "caddy", "namecheap", "dockerfile"]
+}
+
 resource "github_repository" "docker-hugo" {
   name          = "docker-hugo"
   description   = "Hugo Static Site Generator Docker Image"
@@ -65,6 +76,17 @@ resource "github_repository" "docker-hugo" {
   has_projects  = false
   has_wiki      = false
   topics        = ["docker", "hugo", "dockerfile"]
+}
+
+resource "github_repository" "docker-unison" {
+  name          = "docker-unison"
+  description   = "Personal Docker Image for Unison File Sync"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["docker", "unison", "dockerfile"]
 }
 
 resource "github_repository" "dotfiles" {
@@ -120,7 +142,6 @@ resource "github_repository" "jakeprice-dev" {
   has_projects  = false
   has_wiki      = false
   topics        = ["blog", "hugo"]
-
 }
 
 resource "github_repository" "jpd" {
@@ -220,17 +241,6 @@ resource "github_repository" "top-reddit-posts" {
   has_projects  = false
   has_wiki      = false
   topics        = ["reddit", "script", "python", "api"]
-}
-
-resource "github_repository" "docker-unison" {
-  name          = "docker-unison"
-  description   = "Personal Docker Image for Unison File Sync"
-  visibility    = "public"
-  has_downloads = false
-  has_issues    = true
-  has_projects  = false
-  has_wiki      = false
-  topics        = ["docker", "unison"]
 }
 
 resource "github_repository" "weather-report" {
