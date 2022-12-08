@@ -158,7 +158,7 @@ resource "github_repository" "jpd" {
 resource "github_repository" "log-cli" {
   name          = "log-cli"
   description   = "Command Line Interface for my Personal Log."
-  visibility    = "private"
+  visibility    = "public"
   has_downloads = false
   has_issues    = true
   has_projects  = false
@@ -208,6 +208,17 @@ resource "github_repository" "ppn" {
   has_projects  = false
   has_wiki      = false
   topics        = ["self-hosted", "infrastructure-as-code", "configuration-as-code", "docker", "docker-compose", "dockerfile"]
+}
+
+resource "github_repository" "start" {
+  name          = "start"
+  description   = "A Personal Start Page/Home Page"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["start", "home-page"]
 }
 
 #resource "github_repository" "tech-notes" {
