@@ -67,6 +67,17 @@ resource "github_repository" "docker-caddy-namecheap" {
   topics        = ["docker", "caddy", "namecheap", "dockerfile"]
 }
 
+resource "github_repository" "docker-dnsmasq" {
+  name          = "docker-dnsmasq"
+  description   = "Docker Image for dnsmasq DHCP Server"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["docker", "dnsmasq", "dockerfile"]
+}
+
 resource "github_repository" "docker-hugo" {
   name          = "docker-hugo"
   description   = "Hugo Static Site Generator Docker Image"
@@ -76,6 +87,17 @@ resource "github_repository" "docker-hugo" {
   has_projects  = false
   has_wiki      = false
   topics        = ["docker", "hugo", "dockerfile"]
+}
+
+resource "github_repository" "docker-unbound" {
+  name          = "docker-unbound"
+  description   = "Docker Image for Unbound DNS Resolver"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["docker", "unbound", "dockerfile"]
 }
 
 resource "github_repository" "docker-unison" {
