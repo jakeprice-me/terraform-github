@@ -56,6 +56,17 @@ resource "github_repository" "bash-scripts" {
   topics        = ["bash", "script"]
 }
 
+resource "github_repository" "docker-caddy-custom" {
+  name          = "docker-caddy-custom"
+  description   = "Caddy Custom Docker Image"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["docker", "caddy", "security", "namecheap", "dockerfile"]
+}
+
 resource "github_repository" "docker-caddy-namecheap" {
   name          = "docker-caddy-namecheap"
   description   = "Caddy Namecheap Docker Image"
