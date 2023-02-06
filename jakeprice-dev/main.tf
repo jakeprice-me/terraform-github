@@ -298,8 +298,8 @@ resource "github_repository" "weather-report" {
   topics        = ["weather", "api", "openweathermap", "telegram"]
 }
 
-resource "github_repository" "work-docker-utils" {
-  name          = "work-docker-utils"
+resource "github_repository" "workutils" {
+  name          = "workutils"
   description   = "Personal utilities to support my work, in a Docker Compose environment"
   visibility    = "private"
   has_downloads = false
