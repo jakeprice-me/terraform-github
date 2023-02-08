@@ -177,6 +177,17 @@ resource "github_repository" "jakeprice-dev" {
   topics        = ["blog", "hugo"]
 }
 
+resource "github_repository" "jit" {
+  name          = "jit"
+  description   = "Azure JIT (Just-in-Time) CLI Utility"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["azure", "jit", "just-in-time", "cloud"]
+}
+
 resource "github_repository" "jpd" {
   name          = "jpd"
   description   = "Custom Hugo theme for jakeprice.dev."
