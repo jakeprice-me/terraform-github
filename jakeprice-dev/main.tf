@@ -265,16 +265,16 @@ resource "github_repository" "start" {
   topics        = ["start", "home-page"]
 }
 
-#resource "github_repository" "tech-notes" {
-#  name          = "tech-notes"
-#  description   = "Notes on Tech"
-#  visibility    = "public"
-#  has_downloads = false
-#  has_issues    = true
-#  has_projects  = false
-#  has_wiki      = false
-#  topics        = ["til", "tech-notes"]
-#}
+resource "github_repository" "tech-notes" {
+  name          = "tech-notes"
+  description   = "Notes and knowledge on technical topics"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["til", "tech-notes"]
+}
 
 resource "github_repository" "terraform-github" {
   name          = "terraform-github"
