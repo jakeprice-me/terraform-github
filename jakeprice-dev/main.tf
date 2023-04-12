@@ -100,6 +100,17 @@ resource "github_repository" "docker-hugo" {
   topics        = ["docker", "hugo", "dockerfile"]
 }
 
+resource "github_repository" "docker-pyrunner" {
+  name          = "docker-pyrunner"
+  description   = "Simple Docker Container to Run Python Scripts"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["docker", "python", "dockerfile", "runner"]
+}
+
 resource "github_repository" "docker-unbound" {
   name          = "docker-unbound"
   description   = "Docker Image for Unbound DNS Resolver"
