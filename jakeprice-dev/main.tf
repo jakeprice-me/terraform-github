@@ -167,7 +167,7 @@ resource "github_repository" "hugo-theme-log" {
 }
 
 resource "github_repository" "jakeprice-dev" {
-  name          = "jakeprice.dev"
+  name          = "jakeprice-dev.github.io"
   description   = "Hugo Static Site for jakeprice.dev"
   visibility    = "public"
   has_downloads = false
@@ -175,6 +175,13 @@ resource "github_repository" "jakeprice-dev" {
   has_projects  = false
   has_wiki      = false
   topics        = ["blog", "hugo"]
+  pages {
+    cname = "jakeprice.dev"
+    source {
+      branch = "master"
+      path = "/"
+    }
+  }
 }
 
 resource "github_repository" "jit" {
