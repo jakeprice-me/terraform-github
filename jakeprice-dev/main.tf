@@ -316,6 +316,17 @@ resource "github_repository" "top-reddit-posts" {
   topics        = ["reddit", "script", "python", "api"]
 }
 
+resource "github_repository" "verse-of-the-day" {
+  name          = "verse-of-the-day"
+  description   = "Verse of The Day Notification"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["bible", "esv", "verse", "passage", "reading", "gotify", "notification", "api"]
+}
+
 resource "github_repository" "weather-report" {
   name          = "weather-report"
   description   = "Daily Weather Report via Telegram."
