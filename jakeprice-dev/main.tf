@@ -166,6 +166,17 @@ resource "github_repository" "github-cli" {
   topics        = ["github", "api"]
 }
 
+resource "github_repository" "horner-bible-reading-plan-generator" {
+  name          = "horner-bible-reading-plan-generator"
+  description   = "Generate Reading Lists for Horner Bible Reading Plan"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["horner", "bible", "bible-reading-plan"]
+}
+
 resource "github_repository" "hugo-theme-log" {
   name          = "hugo-theme-log"
   description   = "Hugo Theme for Personal Log."
