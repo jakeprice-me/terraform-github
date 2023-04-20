@@ -56,6 +56,17 @@ resource "github_repository" "bash-scripts" {
   topics        = ["bash", "script"]
 }
 
+resource "github_repository" "daily-catechism" {
+  name          = "daily-catechism"
+  description   = "Daily Catechism Notifications"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["catechism", "gotify", "westminster-catechism"]
+}
+
 resource "github_repository" "docker-caddy-custom" {
   name          = "docker-caddy-custom"
   description   = "Caddy Custom Docker Image"
