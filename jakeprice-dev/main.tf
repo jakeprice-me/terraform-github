@@ -188,6 +188,17 @@ resource "github_repository" "horner-bible-reading-plan-generator" {
   topics        = ["horner", "bible", "bible-reading-plan"]
 }
 
+resource "github_repository" "hugo-theme-base" {
+  name          = "hugo-theme-base"
+  description   = "Hugo Theme for Personal Log Sites."
+  visibility    = "private"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["hugo", "theme"]
+}
+
 resource "github_repository" "hugo-theme-log" {
   name          = "hugo-theme-log"
   description   = "Hugo Theme for Personal Log."
