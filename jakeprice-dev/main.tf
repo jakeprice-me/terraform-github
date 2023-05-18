@@ -210,8 +210,8 @@ resource "github_repository" "hugo-theme-log" {
   topics        = ["hugo", "theme"]
 }
 
-resource "github_repository" "jakeprice-dev" {
-  name          = "jakeprice-dev.github.io"
+resource "github_repository" "jakepricedev" {
+  name          = "jakepricedev.github.io"
   description   = "Hugo Static Site for jakeprice.dev"
   visibility    = "public"
   has_downloads = false
