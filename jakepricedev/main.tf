@@ -155,17 +155,6 @@ resource "github_repository" "dotfiles" {
   topics        = ["dotfiles", "bashrc", "vimrc", "tmux"]
 }
 
-resource "github_repository" "espanso-config" {
-  name          = "espanso-config"
-  description   = "Personal Espanso Configuration Files."
-  visibility    = "public"
-  has_downloads = false
-  has_issues    = true
-  has_projects  = false
-  has_wiki      = false
-  topics        = ["espanso"]
-}
-
 resource "github_repository" "github-cli" {
   name          = "github-cli"
   description   = "A Python CLI for Interacting with the GitHub API"
@@ -210,7 +199,7 @@ resource "github_repository" "hugo-theme-log" {
   topics        = ["hugo", "theme"]
 }
 
-resource "github_repository" "jakepricedev" {
+resource "github_repository" "jakeprice-dev" {
   name          = "jakepricedev.github.io"
   description   = "Hugo Static Site for jakeprice.dev"
   visibility    = "public"
