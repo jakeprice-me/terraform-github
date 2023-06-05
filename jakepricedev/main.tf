@@ -64,7 +64,7 @@ resource "github_repository" "daily-catechism" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
-  topics        = ["catechism", "gotify", "westminster-catechism"]
+  topics        = ["catechism", "telegram", "westminster-catechism"]
 }
 
 resource "github_repository" "docker-caddy-custom" {
@@ -346,7 +346,7 @@ resource "github_repository" "verse-of-the-day" {
   has_issues    = true
   has_projects  = false
   has_wiki      = false
-  topics        = ["bible", "esv", "verse", "passage", "reading", "gotify", "notification", "api"]
+  topics        = ["bible", "esv", "verse", "passage", "reading", "telegram", "notification", "api"]
 }
 
 resource "github_repository" "weather-report" {
