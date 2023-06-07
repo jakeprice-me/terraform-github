@@ -272,17 +272,6 @@ resource "github_repository" "miniflux-block" {
   topics        = ["miniflux", "rss"]
 }
 
-resource "github_repository" "misc-config" {
-  name          = "misc-config"
-  description   = "Miscellaneous Configuration Files."
-  visibility    = "public"
-  has_downloads = false
-  has_issues    = true
-  has_projects  = false
-  has_wiki      = false
-  topics        = ["config"]
-}
-
 resource "github_repository" "ppn" {
   name          = "ppn"
   description   = "Configuration & Infrastructure as Code stuff for my self-hosted LAN services."
@@ -358,16 +347,5 @@ resource "github_repository" "weather-report" {
   has_projects  = false
   has_wiki      = false
   topics        = ["weather", "api", "openweathermap", "telegram"]
-}
-
-resource "github_repository" "workutils" {
-  name          = "workutils"
-  description   = "Personal utilities to support my work, in a Docker Compose environment"
-  visibility    = "private"
-  has_downloads = false
-  has_issues    = true
-  has_projects  = false
-  has_wiki      = false
-  topics        = ["work", "docker"]
 }
 
