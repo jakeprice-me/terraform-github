@@ -250,17 +250,6 @@ resource "github_repository" "log-cli" {
   topics        = ["log", "cli"]
 }
 
-resource "github_repository" "log-utilities" {
-  name          = "log-utilities"
-  description   = "A collection of personal Python scripts for enabling features on my Personal Log."
-  visibility    = "public"
-  has_downloads = false
-  has_issues    = true
-  has_projects  = false
-  has_wiki      = false
-  topics        = ["python", "script"]
-}
-
 resource "github_repository" "miniflux-block" {
   name          = "miniflux-block"
   description   = "Block RSS Feed Entries in Miniflux."
