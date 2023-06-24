@@ -12,6 +12,17 @@ provider "github" {
   token = var.token
 }
 
+resource "github_repository" "android-app-openincustomtab" {
+  name          = "android-app-openincustomtab"
+  description   = "Simple Android Application to Share a Link to a Custom Tab"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["android", "app", "preview", "firefox", "custom-tabs"]
+}
+
 resource "github_repository" "ansible-fedora" {
   name          = "ansible-fedora"
   description   = "Ansible Playbook for Fedora."
