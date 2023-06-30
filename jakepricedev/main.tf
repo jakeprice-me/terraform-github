@@ -166,6 +166,17 @@ resource "github_repository" "dotfiles" {
   topics        = ["dotfiles", "bashrc", "vimrc", "tmux"]
 }
 
+resource "github_repository" "firefox-addon-sift-save-bookmark" {
+  name          = "firefox-addon-sift-save-bookmark"
+  description   = "Firefox Addon to Save Bookmarks to SIFT"
+  visibility    = "public"
+  has_downloads = true
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["firefox", "addon", "extension", "firefox-android"]
+}
+
 resource "github_repository" "github-cli" {
   name          = "github-cli"
   description   = "A Python CLI for Interacting with the GitHub API"
