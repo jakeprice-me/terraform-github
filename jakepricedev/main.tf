@@ -177,6 +177,17 @@ resource "github_repository" "firefox-addon-sift-save-bookmark" {
   topics        = ["firefox", "addon", "extension", "firefox-android"]
 }
 
+resource "github_repository" "firefox-bookmarks" {
+  name          = "firefox-bookmarks"
+  description   = "Firefox Bookmarks & Keyword Searches"
+  visibility    = "public"
+  has_downloads = true
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["firefox", "bookmark", "keyword"]
+}
+
 resource "github_repository" "github-cli" {
   name          = "github-cli"
   description   = "A Python CLI for Interacting with the GitHub API"
