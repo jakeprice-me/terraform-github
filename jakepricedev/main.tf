@@ -294,6 +294,17 @@ resource "github_repository" "miniflux-block" {
   topics        = ["miniflux", "rss"]
 }
 
+resource "github_repository" "obsidian-snippets" {
+  name          = "obsidian-snippets"
+  description   = "Obsidian CSS Snippets"
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["obsidian", "css", "markdown"]
+}
+
 resource "github_repository" "ppn" {
   name          = "ppn"
   description   = "Configuration & Infrastructure as Code stuff for my self-hosted LAN services."
