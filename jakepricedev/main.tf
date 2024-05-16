@@ -36,7 +36,7 @@ resource "github_repository" "ansible-fedora" {
 
 resource "github_repository" "ansible-ionos-jakeprice-01" {
   name          = "ansible-ionos-jakeprice-01"
-  description   = "Ansible Playbook to Configure IONOS VPS to Host jakeprice.dev"
+  description   = "Ansible Playbook to Configure IONOS VPS to Host jakeprice.me"
   visibility    = "public"
   has_downloads = false
   has_issues    = true
@@ -232,23 +232,23 @@ resource "github_repository" "hugo-theme-log" {
   topics        = ["hugo", "theme"]
 }
 
-resource "github_repository" "jakeprice-dev" {
-  name          = "jakepricedev.github.io"
-  description   = "Hugo Static Site for jakeprice.dev"
-  visibility    = "public"
-  has_downloads = false
-  has_issues    = true
-  has_projects  = false
-  has_wiki      = false
-  topics        = ["blog", "hugo"]
-  pages {
-    cname = "jakeprice.dev"
-    source {
-      branch = "master"
-      path = "/"
-    }
-  }
-}
+#resource "github_repository" "jakeprice-me" {
+#  name          = "jakepricedev.github.io"
+#  description   = "Hugo Static Site for jakeprice.me"
+#  visibility    = "public"
+#  has_downloads = false
+#  has_issues    = true
+#  has_projects  = false
+#  has_wiki      = false
+#  topics        = ["blog", "hugo"]
+#  pages {
+#    cname = "jakeprice.me"
+#    source {
+#      branch = "master"
+#      path = "/"
+#    }
+#  }
+#}
 
 resource "github_repository" "jit" {
   name          = "jit"
@@ -263,7 +263,7 @@ resource "github_repository" "jit" {
 
 resource "github_repository" "jpd" {
   name          = "jpd"
-  description   = "Custom Hugo theme for jakeprice.dev."
+  description   = "Custom Hugo theme for jakeprice.me."
   visibility    = "public"
   has_downloads = false
   has_issues    = true
