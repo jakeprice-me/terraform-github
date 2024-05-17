@@ -305,6 +305,17 @@ resource "github_repository" "obsidian-esv-bible" {
   topics        = ["obsidian", "plugin", "markdown", "esv", "api", "bible"]
 }
 
+resource "github_repository" "obsidian-new-sift-entry" {
+  name          = "obsidian-new-sift-entry"
+  description   = "Create a new SIFT entry."
+  visibility    = "private"
+  has_downloads = false
+  has_issues    = false
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["obsidian", "plugin", "markdown"]
+}
+
 resource "github_repository" "obsidian-snippets" {
   name          = "obsidian-snippets"
   description   = "Obsidian CSS Snippets"
