@@ -316,6 +316,17 @@ resource "github_repository" "obsidian-new-sift-entry" {
   topics        = ["obsidian", "plugin", "markdown"]
 }
 
+resource "github_repository" "obsidian-slugify-title" {
+  name          = "obsidian-slugify-title"
+  description   = "Slugify the current note's title and add it to the aliases property."
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = false
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["obsidian", "plugin", "markdown", "slugify", "slug"]
+}
+
 resource "github_repository" "obsidian-snippets" {
   name          = "obsidian-snippets"
   description   = "Obsidian CSS Snippets"
