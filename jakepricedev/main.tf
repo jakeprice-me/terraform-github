@@ -294,6 +294,17 @@ resource "github_repository" "miniflux-block" {
   topics        = ["miniflux", "rss"]
 }
 
+resource "github_repository" "obsidian-esv-bible" {
+  name          = "obsidian-esv-bible"
+  description   = "Insert the referenced bible verse using the ESV API."
+  visibility    = "public"
+  has_downloads = false
+  has_issues    = true
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["obsidian", "plugin", "markdown", "esv", "api", "bible"]
+}
+
 resource "github_repository" "obsidian-snippets" {
   name          = "obsidian-snippets"
   description   = "Obsidian CSS Snippets"
