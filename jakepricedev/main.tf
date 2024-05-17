@@ -321,10 +321,21 @@ resource "github_repository" "obsidian-slugify-title" {
   description   = "Slugify the current note's title and add it to the aliases property."
   visibility    = "public"
   has_downloads = false
-  has_issues    = false
+  has_issues    = true
   has_projects  = false
   has_wiki      = false
   topics        = ["obsidian", "plugin", "markdown", "slugify", "slug"]
+}
+
+resource "github_repository" "obsidian-open-local-archive" {
+  name          = "obsidian-open-local-archive"
+  description   = "Opens links within the SIFT `local_archive` frontmatter key in the default web browser."
+  visibility    = "private"
+  has_downloads = false
+  has_issues    = false
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["obsidian", "plugin", "markdown"]
 }
 
 resource "github_repository" "obsidian-snippets" {
