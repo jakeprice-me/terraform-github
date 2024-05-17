@@ -338,6 +338,17 @@ resource "github_repository" "obsidian-open-local-archive" {
   topics        = ["obsidian", "plugin", "markdown"]
 }
 
+resource "github_repository" "obsidian-universal-search-link" {
+  name          = "obsidian-universal-search-link"
+  description   = "Adds an icon to open the Universal Search website in the default browser."
+  visibility    = "private"
+  has_downloads = false
+  has_issues    = false
+  has_projects  = false
+  has_wiki      = false
+  topics        = ["obsidian", "plugin", "markdown"]
+}
+
 resource "github_repository" "obsidian-snippets" {
   name          = "obsidian-snippets"
   description   = "Obsidian CSS Snippets"
