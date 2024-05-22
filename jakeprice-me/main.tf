@@ -330,6 +330,7 @@ resource "github_repository" "obsidian-slugify-title" {
 resource "github_repository" "obsidian-open-local-archive" {
   name          = "obsidian-open-local-archive"
   description   = "Opens links within the SIFT `local_archive` frontmatter key in the default web browser."
+  archived      = true
   visibility    = "private"
   has_downloads = false
   has_issues    = false
